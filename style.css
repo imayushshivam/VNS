@@ -56,7 +56,7 @@
      }
      
      fieldset {
-         width: 70%;
+         width: 75%;
      }
      
      fieldset.block.bl1,
@@ -109,6 +109,13 @@
          /* width: 75%; */
      }
      
+     .pic {
+         max-width: 25rem;
+         /* max-height: 23%; */
+         border-radius: 10px;
+         cursor: alias;
+     }
+     
      .img2,
      .img4 {
          float: right;
@@ -121,15 +128,8 @@
          margin: 8px 30px 5px 10px;
      }
      
-     .pic {
-         max-width: 25rem;
-         /* max-height: 23%; */
-         border-radius: 10px;
-         cursor: alias;
-     }
-     
-     .pg21 {
-         clear: left;
+     .block.bl4>p {
+         clear: right;
      }
      
      nav a:hover,
