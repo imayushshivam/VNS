@@ -1,3 +1,7 @@
+     * {
+         box-sizing: border-box;
+     }
+     
      body {
          margin: 0;
          /* border: 0; */
@@ -15,22 +19,30 @@
      
      header {
          padding: 30px;
-         background-color: #C56824;
+         /* background: rgb(197, 104, 36); */
+         background: rgb(197, 104, 36);
+         background: linear-gradient(51deg, rgba(197, 104, 36, 1) 0%, rgba(197, 104, 36, 0.4360295143448004) 45%, rgba(197, 104, 36, 1) 100%);
          position: relative;
          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAXp_KJDJ23Nm0ac75GjUZHe-HGjaKNziLJw&usqp=CAU);
+         background-attachment: fixed;
      }
      
      nav {
-         background-color: #8b3f0c;
-         overflow: hidden;
+         display: flex;
+         /* background: rgb(139, 63, 12); */
+         background: radial-gradient(circle, rgba(139, 63, 12, 0.9626401586025035) 0%, rgba(249, 131, 4, 0.6573180297509629) 45%, rgba(139, 63, 12, 0.9458334359134278) 100%);
+         /* align-items: center; */
      }
      
      nav a {
          text-decoration: none;
+         display: block;
+         /* height: auto; */
          float: left;
-         padding: 15px 100px;
+         padding: 15px 20px;
          text-align: center;
          color: whitesmoke;
+         margin-left: 50px;
          /* border: 1px solid white; */
      }
      
@@ -43,7 +55,7 @@
          float: none;
          border: dotted red 7px;
          border-bottom: none;
-         width: 3%;
+         width: 63px;
          margin: 50px auto;
      }
      
@@ -52,7 +64,7 @@
          padding: 10px;
          font-family: 'Cabin', sans-serif;
          text-align: left;
-         color: rgba(124, 12, 27, 0.938);
+         color: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
      }
      
      fieldset {
@@ -89,7 +101,7 @@
      }
      
      .blck-heading {
-         font-size: 60px;
+         font-size: 45px;
          margin-top: 0;
          padding-top: 0;
          text-decoration: underline;
@@ -104,7 +116,8 @@
          /* border: ridge 1mm #f56b0e; */
          font-size: 20px;
          height: auto;
-         background-color: #f9830491;
+         background: rgba(249, 131, 4, 0.493);
+         /* background: linear-gradient(90deg, rgba(249, 131, 4, 0.541) 0%, rgba(249, 131, 4, 0.623) 45%, rgba(249, 131, 4, 0.514) 100%); */
          font-family: 'Playfair Display', serif;
          /* width: 75%; */
      }
@@ -128,16 +141,22 @@
          margin: 8px 30px 5px 10px;
      }
      
-     .block.bl4>p {
+     .pg12,
+     .pg32 {
+         clear: left;
+     }
+     
+     .pg22,
+     .pg42 {
          clear: right;
      }
      
      nav a:hover,
      select:hover {
-         color: rgb(240, 174, 51);
-         font-size: 20px;
-         background-color: rgb(95, 1, 6);
-         padding: 15px 100px;
+         color: #8b3f0c;
+         font-size: 18px;
+         background-color: whitesmoke;
+         padding: 13px 85px;
          /* border: 1px solid navajowhite; */
      }
      
@@ -151,15 +170,32 @@
      
      footer {
          margin: 30px auto;
-         background-color: #8b3f0cc0;
+         /* background-color: #8b3f0cc0; */
+         background: rgb(139, 12, 12);
+         background: linear-gradient(90deg, rgba(139, 12, 12, 0.9486345563616071) 10%, rgba(232, 71, 71, 0.8141807748490021) 46%, rgba(208, 62, 20, 0.9710435199470413) 98%);
          overflow: hidden;
+         display: flex;
+         flex-wrap: wrap;
      }
      
      footer a:hover {
-         background-color: rgb(231, 164, 76);
-         color: brown;
-         font-size: 20px;
-         padding: 9px 70px;
+         background-color: rgba(235, 148, 17, 0.993);
+         color: wheat;
+         font-size: 19px;
+         padding: 9px 65px;
+     }
+     
+     .flex-align-ri8 {
+         margin-left: auto;
+     }
+     
+     @media screen and (max-width: 700px) {
+         nav {
+             flex-direction: column;
+         }
+         .flex-align-ri8 {
+             margin-left: 0;
+         }
      }
      /* **************************Prev work*********************************** */
      /* *{
